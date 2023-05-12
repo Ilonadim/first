@@ -16,13 +16,17 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "ES2022",
-    "module": "ES2022",
+    "target": "esnext",
+    "module": "esnext",
     "useDefineForClassFields": false,
+    "types": ["bun-types"],
     "lib": [
-      "ES2022",
+      "esnext",
       "dom"
-    ]
+    ],
+    "paths": {
+      "data": ["./data.ts"]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
